@@ -24,12 +24,86 @@
     
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
+    <style type="text/css">
+    	ul.notes li {
+  margin: 10px 40px 50px 0px;
+  float: left;
+}
+
+.2{
+	float: left;
+	padding-right: 500px;
+}
+ul.notes li, ul.tag-list li {
+  list-style: none;
+}
+
+ul.notes li div small {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 10px;
+}
+
+div.rotate-1 {
+  -webkit-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  -moz-transform: rotate(-6deg);
+}
+
+div.rotate-2 {
+  -o-transform: rotate(4deg);
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  position: relative;
+  top: 5px;
+}
+
+.lazur-bg {
+  background-color: #23c6c8;
+  color: #ffffff;
+}
+
+.red-bg {
+  background-color: #ed5565;
+  color: #ffffff;
+}
+
+.navy-bg {
+  background-color: #1ab394;
+  color: #ffffff;
+}
+
+.yellow-bg {
+  background-color: #f8ac59;
+  color: #ffffff;
+}
+
+ul.notes li div {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  height: 210px;
+  width: 210px;
+  padding: 1em;
+  -moz-box-shadow: 5px 5px 7px #212121;
+  -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  -moz-transition: -moz-transform 0.15s linear;
+  -o-transition: -o-transform 0.15s linear;
+  -webkit-transition: -webkit-transform 0.15s linear;
+}
+
+
+
+
+    </style>
 </head>
 <body>
 	<div class="container-fluid" id="wrapper">
 		<div class="row">
 			<nav class="sidebar col-xs-12 col-sm-4 col-lg-3 col-xl-2 bg-faded sidebar-style-1">
-				<h1 class="site-title"><a href="index.html"><em class="fa fa-rocket"></em> Brand.name</a></h1>
+				<h1 class="site-title"><a href="index.html"><em class="fa fa-rocket"></em> Notas</a></h1>
 				
 				<a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><em class="fa fa-bars"></em></a>
 				
@@ -38,12 +112,123 @@
 				</ul>
 				
 				<a href="#" class="logout-button"><em class="fa fa-power-off"></em> Signout</a></nav>
-			
-			
+			<div class="container" class="2">
+			<div class="container bootstrap snippet" class="row col-md-6 col-md-offset-2 custyle" style="margin: auto;">
+    <div class="row">
+    	<ul class="notes">
+            <li>
+                <div class="rotate-1 lazur-bg" style="background-color: lightblue;">
+                    <h4>Título</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rhoncus </p>
+                    <a href="#" class="text-danger pull-right"><i class="fa fa-trash-o "></i></a>
+                                        <a href="#" class="text-danger pull-right"><i><img src="edit.png" width="15px" height="15px"></i></a>
+
+                </div>
+            </li>   
+            <li>
+                <div class="rotate-2 red-bg" style="background-color: lightgreen;">
+                    <h4>Título</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rhoncus </p>
+                    <a href="#" class="text-danger pull-right"><i class="fa fa-trash-o "></i></a>
+                                        <a href="#" class="text-danger pull-right"><i><img src="edit.png" width="15px" height="15px"></i></a>
+
+                </div>
+            </li>    
+            <li>
+                <div class="rotate-1 yellow-bg" style="background-color: #FA5858;">
+                    <h4>Título</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rhoncus </p>
+                    <a href="#" class="text-danger pull-right"><i class="fa fa-trash-o "></i></a>
+                                        <a href="#" class="text-danger pull-right"><i><img src="edit.png" width="15px" height="15px"></i></a>
+
+                </div>
+            </li>
+            <li>
+                <div class="rotate-2 red-bg" style="background-color: lightgreen;">
+                    <h4>Título</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rhoncus </p>
+                    <a href="#" class="text-danger pull-right"><i class="fa fa-trash-o "></i></a>
+                                        <a href="#" class="text-danger pull-right"><i><img src="edit.png" width="15px" height="15px"></i></a>
+
+                </div>
+            </li>
+            <li>
+                <div class="rotate-1 yellow-bg" style="background-color: #FA5858;">
+                    <h4>Título</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rhoncus</p>
+                    <a href="#" class="text-danger pull-right"><i class="fa fa-trash-o "></i></a>
+                                        <a href="#" class="text-danger pull-right"><i><img src="edit.png" width="15px" height="15px"></i></a>
+
+                </div>
+            </li>
+            <li>
+                <div class="rotate-1 lazur-bg" style="background-color: lightblue;">
+                    <h4>Título</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rhoncus </p>
+                    <a href="#" class="text-danger pull-right"><i class="fa fa-trash-o "></i></a>
+                    <a href="#" class="text-danger pull-right"><i><img src="edit.png" width="15px" height="15px"></i></a>
+                </div>
+            </li>
+            <a href="#" class="btn btn-primary btn-xs pull-right" data-toggle="modal" data-target="#myModal"><b>+</b> Nueva nota</a>     
+		</ul>
+		
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Añadir nota</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+<fieldset style="margin: center;">
+
+<!-- Form Name -->
+<legend></legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Título</label>  
+  <div class="col-md-12">
+  <input id="textinput" name="textinput" type="text" placeholder="Título..." class="form-control input-md">
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+	<label class="col-md-4 control-label" for="textinput">Descripción</label> 
+  <div class="col-md-12">                     
+    <textarea class="form-control" id="textarea" placeholder="Descripción..." name="textarea"></textarea>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <div class="col-md-4">
+    <button id="singlebutton" name="singlebutton" type="submit" class="btn btn-primary">Añadir</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+    </div>
+</div>  
+	</div>
+</div>
+</div>
 					
 					
 		</div>
-	</div>
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
